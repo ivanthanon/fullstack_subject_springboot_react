@@ -1,0 +1,14 @@
+dentro div
+
+{/** */}
+      {/* Botón para cambiar el front-end */}
+      {!mostrarNuevoFrontend && (
+        <div className="bd">
+          <Button onClick={handleMostrarFrontend} className="bd">
+            Connect to BD!
+          </Button>
+        </div>
+      )}
+
+      {/* Mostrar el nuevo front-end si mostrarNuevoFrontend es true */}
+      {mostrarNuevoFrontend && <MainFront />}
