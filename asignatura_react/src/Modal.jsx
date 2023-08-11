@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import "./form.css";
 import Button from "react-bootstrap/Button";
 
-
 const ModalForm = (props) => {
-
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [name, setName] = useState("");
   const [credits, setCredits] = useState("");
@@ -83,7 +80,6 @@ const ModalForm = (props) => {
         profesorId: profesorId,
         ident: idem,
       };
-
     }
 
     try {
@@ -97,10 +93,7 @@ const ModalForm = (props) => {
 
       const responseData = await response.text();
       console.log("Response from server:", responseData);
-
-
-
-
+      props.onAdd();
     } catch (error) {
       console.error("Error:", error);
     }
