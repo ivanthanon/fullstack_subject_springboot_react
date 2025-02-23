@@ -1,0 +1,75 @@
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.bd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.buttonPanel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+
+.into {
+  background-color: white;
+  border: 5px solid black;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: "0 2px 4px rgba(0, 0, 0, 0.2)";
+}
+
+label {
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+input {
+  margin-top: 8px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 0 auto;
+  overflow: hidden; /* Evita el scroll global */
+}
+
+.MuiDataGrid-root {
+  width: 90%; /* Aumenta el tamaño de la tabla */
+  max-width: 1200px;
+  margin: 10px;
+  overflow: auto; /* Aplica el scroll dentro de la tabla */
+}
+
+
+
+
+
